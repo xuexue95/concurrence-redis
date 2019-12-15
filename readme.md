@@ -30,11 +30,11 @@
 
 #### 1. 库存表
 
-![商品库存表](\images\商品库存表.png)
+![商品库存表](https://github.com/xuexue95/concurrence-redis/blob/master/images/商品库存表.png)
 
 #### 2. 订单表
 
-![订单表](\images\订单表.png)
+![订单表](https://github.com/xuexue95/concurrence-redis/blob/master/images/订单表.png)
 
 ### 三、项目依赖
 
@@ -47,9 +47,7 @@
 
 ### 四、项目目录
 
-![项目目录](\images\项目目录.png)
-
-
+![项目目录](https://github.com/xuexue95/concurrence-redis/blob/master/images/项目目录.png)
 
 
 

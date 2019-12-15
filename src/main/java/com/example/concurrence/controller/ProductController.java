@@ -57,9 +57,4 @@ public class ProductController {
         String res =  productService.createOrder(productName, userId);
         return res;
     }
-
-    @RequestMapping("/forMysql")
-        public void forMysql() throws InterruptedException {
-            productService.setOrderToMysql();
-        }
 }

@@ -1,11 +1,9 @@
 package com.example.concurrence.service;
-import	java.awt.Desktop.Action;
 
 import com.example.concurrence.entity.Order;
 import com.example.concurrence.entity.Product;
 import com.example.concurrence.mapper.OrderMapper;
 import com.example.concurrence.mapper.ProductMapper;
-import com.sun.org.apache.xpath.internal.operations.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -68,8 +66,10 @@ public class ProductService {
         return "购买成功";
     }
 
-
-    public void setOrderToMysql() throws InterruptedException {
+    /**
+     * 获取缓存订单,存入mysql
+     */
+    public void setOrderToMysql() {
         List<Product> products = productMapper.getAll() ;
         for (Product product : products) {
             // 获取 redis 订单列表长度

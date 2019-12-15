@@ -17,9 +17,10 @@ public class ConcurrenceApplication {
 		SpringApplication.run(ConcurrenceApplication.class, args);
 
 	}
+
+	// 计划任务 每隔 0.5秒 获取 redis 订单列表存入 mysql
 	@Scheduled(fixedDelay = 500)
-	public void autoRun() throws InterruptedException {
+	public void autoRun() {
 		productService.setOrderToMysql();
 	}
-
 }

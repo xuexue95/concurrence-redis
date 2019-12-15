@@ -11,5 +11,4 @@ public interface ProductMapper {
 
     @Select("SELECT * FROM rush_product")
     List<Product> getAll();
-
 }
